@@ -3,7 +3,7 @@ from google import genai  # pip install google-genai
 from dotenv import load_dotenv ; load_dotenv()
 import os
 
-client = genai.Client( api_key= os.getenv('GEMINI_API_KEY') )
+client = genai.Client( api_key= st.secrets['GEMINI_API_KEY'] )
 
 
 st.header( 'Our First Chatbot' )
